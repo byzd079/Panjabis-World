@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.success {
+    margin: 20px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.item form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.item label {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.item input[type="text"],
+.item input[type="file"],
+.item select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.item button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item button img {
+    height: 20px;
+    width: auto;
+}
+
+.item-table {
+    width: 80%;
+    margin: 20px auto; /* Center the table horizontally and give some margin from the top */
+    border-collapse: collapse; /* Collapse borders */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Consistent with the form */
+}
+
+.item-table th, .item-table td {
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 8px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left in cells */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.item-table th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white; /* White text for header */
+}
+
+.item-table tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+.item-table tr:hover {
+    background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+.item-table td {
+    text-align: center; /* Center text in table cells */
+}
+
+.item-table button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+@media screen and (max-width: 768px) {
+    .item, .item-table {
+        width: 95%; /* Wider on smaller screens for better use of space */
+    }
+
+    .item form {
+        grid-template-columns: 1fr; /* Stack inputs vertically on smaller screens */
+    }
+
+    .item button {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .alert, .success, .item, .item-table {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .item input[type="text"], .item input[type="file"], .item select {
+        padding: 6px; /* Smaller padding for smaller screens */
+    }
+
+    .item button {
+        padding: 8px; /* Smaller button padding */
+    }
+
+    .item-table th, .item-table td {
+        padding: 6px; /* Smaller cell padding */
+    }
+}

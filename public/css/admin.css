@@ -1,0 +1,160 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.admin-name {
+    font-size: 1.2rem;
+}
+
+.logout-btn {
+    padding: 8px 16px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main container styling */
+.container {
+    width: 85%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.headerimg img {
+    width: 50px;
+}
+
+.headercontent h2 {
+    margin-left: 20px;
+}
+
+.divide {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+/* Alert styling */
+.alert {
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+}
+
+.alert-error {
+    background-color: #f44336;
+}
+
+/* Search and add item section */
+.search input[type="text"] {
+    padding: 8px;
+    margin-right: 8px;
+    width: 200px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.add h4 {
+    margin-right: 10px;
+}
+
+.add a img {
+    width: 25px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #eee;
+}
+
+/* Button in table */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* General icon styling adjustment */
+img {
+    vertical-align: middle;
+}
+
+/* Search icon sizing */
+.search button img {
+    width: 16px;
+    height: 16px;  /* Adjusted to be smaller for a better fit in the search box */
+}
+
+/* Add icon sizing in the 'Add New Item' section */
+.add a img {
+    width: 16px;  /* Adjusted to be smaller */
+    height: 16px;
+}
+
+/* Edit icon sizing in the table */
+table a img {
+    width: 24px;  /* Smaller size for a better fit */
+    height: 24px;
+}
+
+/* Delete icon sizing in the table */
+table button img {
+    width: 24px;  /* Reduced size for consistency and aesthetics */
+    height: 24px;
+}
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+
